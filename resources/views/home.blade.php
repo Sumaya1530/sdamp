@@ -4,10 +4,29 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Admin</title>
+    <title>Admin Pannel</title>
     <!-- base:css -->
     <link rel="stylesheet" href="{{'backend/vendors/typicons.font/font/typicons.css'}}">
-    <link rel="stylesheet" href="{{'C:\xampp\htdocs\ffff\sdamp\resources\css\app.css'}}">
+    <link rel="stylesheet" href="{{'backend/vendors/typicons.font/font/typicons.css'}}">
+    <link rel="stylesheet" href="{{asset('./css/app.css')}}" type="text/css">
+    <style>
+      #sidebar{
+    position: absolute;
+    left:0;
+    height: 100%;
+    color:black;
+}
+#Logout{
+  position: fixed;
+  bottom: 0;
+  weight: 100%;
+}
+#header{
+  margin-right: 15px;
+  position: relative;
+  left:0;
+}
+      </style>
     <!-- endinject --> 
     <!-- plugin css for this page -->
     <!-- End plugin css for this page -->
@@ -55,11 +74,11 @@
           <li class="nav-item">
             <div class="d-flex sidebar-profile">
               <div class="sidebar-profile-image">
-                <img src="images/faces/face29.png" alt="image">
+                <img src="./css/images/faces/face29.png" alt="image">
                 <span class="sidebar-status-indicator"></span>
               </div>
               <div class="sidebar-profile-name">
-              <p class="sidebar-name">
+              <p class="sidebar-name" id="header">
                   Online Healthcare
                 </p>
                 <p class="sidebar-designation">
@@ -86,11 +105,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <i class="typcn typcn-briefcase menu-icon"></i>
-              <span class="menu-title">Log in</span>
-              <i class="typcn typcn-chevron-right menu-arrow"></i>
-            </a>
+           
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
@@ -177,6 +192,12 @@
             <a class="nav-link" href="pages/documentation/documentation.html">
               <i class="typcn typcn-document-text menu-icon"></i>
               <span class="menu-title">Documentation</span>
+            </a>
+          </li>
+          <li class="nav-item" id="Logout">
+            <a class="nav-link" href="">
+              <i class="typcn typcn-document-text menu-icon"></i>
+              <span class="menu-title">Logout</span>
             </a>
           </li>
         </ul>
