@@ -113,16 +113,16 @@
                 <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
               </ul>
             </div>
-          </li>
+          </li>          
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+            <a class="nav-link" data-toggle="collapse" href="{{url('/boking/list')}}" aria-expanded="false" aria-controls="form-elements">
               <i class="typcn typcn-film menu-icon"></i>
-              <span class="menu-title">Managr Booking</span>
-              <i class="menu-arrow"></i>
+              <span class="menu-title">boking</span>
+              <i class="menu-arrow"></i>                                                                         
             </a>
-            <div class="collapse" id="form-elements">
+            <div class="collapse" id="boking">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Basic Elements</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{url('/list')}}">Basic Elements</a></li>
               </ul>
             </div>
           </li>
