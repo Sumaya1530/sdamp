@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class BokingController extends Controller
+class bokingcontroller extends Controller
 {
-    public function list(){    
-     return view('list');
+    public function book(){
+        return view('list');
     }
 }
