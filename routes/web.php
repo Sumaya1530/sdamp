@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\controllers\HomeController;
 use App\Http\controllers\BokingController;
+use App\Http\controllers\MbookingController;
 
 
 /*
@@ -20,3 +21,4 @@ Route::get('/', [HomeController::class, 'home']);
 //Route::get('/boking/list', [BokingController::class, 'list']);
 
 Route::get('/boking', [BokingController::class, 'book']);
+Route::get('/Mbooking', [MbookingController::class, 'mbooking']);

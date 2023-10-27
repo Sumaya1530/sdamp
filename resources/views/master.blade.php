@@ -23,7 +23,8 @@
 
    
 
-   @include('admin.pages.partial.head')
+   <!-- @include('admin.pages.partial.head') -->
+   @include('admin.home.mbooking')
 
 
 
@@ -180,8 +181,8 @@
           </button>
         </div>
       </nav>
-       partial
-       <div class="container-fluid page-body-wrapper">
+       <!-- partial
+       <div class="container-fluid page-body-wrapper"> -->
         partial:partials/_settings-panel.html
         <div class="theme-setting-wrapper">
           <div id="settings-trigger"><i class="typcn typcn-cog-outline"></i></div>
@@ -208,8 +209,8 @@
             </div>
           </div>
         </div>
-         < partial 
-         <partial:partials/_sidebar.html -->
+         <!-- < partial 
+         <partial:partials/_sidebar.html --> 
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
@@ -353,7 +354,7 @@
 
 
 
-     @yield('content')
+     <!-- @yield('content') -->
 
 
 
