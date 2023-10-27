@@ -15,78 +15,92 @@
     <link rel="stylesheet" href="css/vertical-layout-light/style.css">
     <!-- endinject -->
     <link rel="shortcut icon" href="images/favicon.png" />
-    
-  </head>
+    <style>
+    #sidebar{
+      position: absolute;
+      left:0;
+      height:100%;
+      color:black;
+    } 
+    #Logout{
+      position: fixed;
+      bottom:0;
+      weight:100%;
+    }
+    #header{
+      margin-right;15px;
+      position: relative;
+      left:0%;
+    }
+    </style>
+
+    </head>
   <body>
 
 
 
    
 
-   <!-- @include('admin.pages.partial.head') -->
-   @include('admin.home.mbooking')
+   @include('admin.pages.partial.head')
 
 
 
 
-
-
-
-     <div class="container-scroller">
+     <!-- <div class="container-scroller">
       partial:partials/_navbar.html
-      <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+      <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row"> -->
+        <!-- <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
           <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo.svg" alt="logo"/></a>
           <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg" alt="logo"/></a>
           <button class="navbar-toggler navbar-toggler align-self-center d-none d-lg-flex" type="button" data-toggle="minimize">
             <span class="typcn typcn-th-menu"></span>
           </button>
-        </div>
-        <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
-          <ul class="navbar-nav mr-lg-2">
-            <li class="nav-item  d-none d-lg-flex">
+        </div> -->
+        <!-- <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+          <ul class="navbar-nav mr-lg-2"> -->
+            <!-- <li class="nav-item  d-none d-lg-flex">
               <a class="nav-link" href="#">
                 Calendar
               </a>
-            </li>
-            <li class="nav-item  d-none d-lg-flex">
+            </li> -->
+            <!-- <li class="nav-item  d-none d-lg-flex">
               <a class="nav-link active" href="#">
                 Statistic
               </a>
-            </li>
-            <li class="nav-item  d-none d-lg-flex">
+            </li> -->
+            <!-- <li class="nav-item  d-none d-lg-flex">
               <a class="nav-link" href="#">
                 Employee
               </a>
-            </li>
-          </ul>
-          <ul class="navbar-nav navbar-nav-right">
-            <li class="nav-item d-none d-lg-flex  mr-2">
+            </li> -->
+          <!-- </ul>
+          <ul class="navbar-nav navbar-nav-right"> -->
+            <!-- <li class="nav-item d-none d-lg-flex  mr-2">
               <a class="nav-link" href="#">
                 Help
               </a>
-            </li>
-            <li class="nav-item dropdown d-flex">
+            </li> -->
+            <!-- <li class="nav-item dropdown d-flex">
               <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
                 <i class="typcn typcn-message-typing"></i>
                 <span class="count bg-success">2</span>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+              </a> -->
+              <!-- <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
                 <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
                 <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
                     <img src="images/faces/face4.jpg" alt="image" class="profile-pic">
-                  </div>
-                  <div class="preview-item-content flex-grow">
+                  </div> -->
+                  <!-- <div class="preview-item-content flex-grow">
                     <h6 class="preview-subject ellipsis font-weight-normal">David Grey
                     </h6>
                     <p class="font-weight-light small-text mb-0">
                       The meeting is cancelled
                     </p>
-                  </div>
+                  </div> -->
                 </a>
                 <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
+                  <!-- <div class="preview-thumbnail">
                     <img src="images/faces/face2.jpg" alt="image" class="profile-pic">
                   </div>
                   <div class="preview-item-content flex-grow">
@@ -95,71 +109,71 @@
                     <p class="font-weight-light small-text mb-0">
                       New product launch
                     </p>
-                  </div>
+                  </div> -->
                 </a>
                 <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
+                  <!-- <div class="preview-thumbnail">
                     <img src="images/faces/face3.jpg" alt="image" class="profile-pic">
-                  </div>
-                  <div class="preview-item-content flex-grow">
+                  </div> -->
+                  <!-- <div class="preview-item-content flex-grow">
                     <h6 class="preview-subject ellipsis font-weight-normal"> Johnson
                     </h6>
                     <p class="font-weight-light small-text mb-0">
                       Upcoming board meeting
                     </p>
-                  </div>
+                  </div> -->
                 </a>
               </div>
             </li>
             <li class="nav-item dropdown  d-flex">
-              <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center" id="notificationDropdown" href="#" data-toggle="dropdown">
+              <!-- <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center" id="notificationDropdown" href="#" data-toggle="dropdown">
                 <i class="typcn typcn-bell mr-0"></i>
                 <span class="count bg-danger">2</span>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+              </a> -->
+              <!-- <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
                 <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
                 <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
                     <div class="preview-icon bg-success">
                       <i class="typcn typcn-info-large mx-0"></i>
                     </div>
-                  </div>
-                  <div class="preview-item-content">
+                  </div> -->
+                  <!-- <div class="preview-item-content">
                     <h6 class="preview-subject font-weight-normal">Application Error</h6>
                     <p class="font-weight-light small-text mb-0">
                       Just now
                     </p>
-                  </div>
+                  </div> -->
                 </a>
                 <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
+                  <!-- <div class="preview-thumbnail">
                     <div class="preview-icon bg-warning">
                       <i class="typcn typcn-cog mx-0"></i>
-                    </div>
+                    </div> -->
                   </div>
-                  <div class="preview-item-content">
+                  <!-- <div class="preview-item-content">
                     <h6 class="preview-subject font-weight-normal">Settings</h6>
                     <p class="font-weight-light small-text mb-0">
                       Private message
                     </p>
-                  </div>
+                  </div> -->
                 </a>
                 <a class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
+                  <!-- <div class="preview-thumbnail">
                     <div class="preview-icon bg-info">
                       <i class="typcn typcn-user-outline mx-0"></i>
                     </div>
-                  </div>
-                  <div class="preview-item-content">
+                  </div> -->
+                  <!-- <div class="preview-item-content">
                     <h6 class="preview-subject font-weight-normal">New user registration</h6>
                     <p class="font-weight-light small-text mb-0">
                       2 days ago
                     </p>
-                  </div>
+                  </div> -->
                 </a>
               </div>
             </li>
-            <li class="nav-item nav-profile dropdown">
+            <!-- <li class="nav-item nav-profile dropdown">
               <a class="nav-link dropdown-toggle  pl-0 pr-0" href="#" data-toggle="dropdown" id="profileDropdown">
                 <i class="typcn typcn-user-outline mr-0"></i>
                 <span class="nav-profile-name">Evan Morales</span>
@@ -174,16 +188,16 @@
                 Logout
                 </a>
               </div>
-            </li>
-          </ul>
+            </li> -->
+          <!-- </ul>
           <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
             <span class="typcn typcn-th-menu"></span>
           </button>
         </div>
-      </nav>
+      </nav> -->
        <!-- partial
        <div class="container-fluid page-body-wrapper"> -->
-        partial:partials/_settings-panel.html
+        <!-- partial:partials/_settings-panel.html -->
         <div class="theme-setting-wrapper">
           <div id="settings-trigger"><i class="typcn typcn-cog-outline"></i></div>
           <div id="theme-settings" class="settings-panel">
@@ -211,9 +225,14 @@
         </div>
          <!-- < partial 
          <partial:partials/_sidebar.html --> 
-        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="h-table">
+          
+          
+          <div> Sidebar content </div>
+              <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
+
             <div class="d-flex sidebar-profile">
               <div class="sidebar-profile-image">
                 <img src="images/faces/face29.png" alt="image">
@@ -241,13 +260,13 @@
             <p class="sidebar-menu-title">Dash menu</p>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="/">
               <i class="typcn typcn-device-desktop menu-icon"></i>
               <span class="menu-title">HOME</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-toggle="collapse" href="/Mbooking" aria-expanded="false" aria-controls="ui-basic">
               <i class="typcn typcn-briefcase menu-icon"></i>
               <span class="menu-title">Manage Booking</span>
               <i class="typcn typcn-chevron-right menu-arrow"></i>
@@ -309,11 +328,11 @@
             </div>
           </li>
          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+            <!-- <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
               <i class="typcn typcn-user-add-outline menu-icon"></i>
-              <span class="menu-title">User Pages</span>
+              <span class="menu-title"></span>
               <i class="menu-arrow"></i>
-            </a>
+            </a> -->
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
@@ -322,11 +341,11 @@
             </div>
           </li> 
            <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#error" aria-expanded="false" aria-controls="error">
+            <!-- <a class="nav-link" data-toggle="collapse" href="#error" aria-expanded="false" aria-controls="error">
               <i class="typcn typcn-globe-outline menu-icon"></i>
               <span class="menu-title">Error pages</span>
               <i class="menu-arrow"></i>
-            </a>
+            </a> -->
             <div class="collapse" id="error">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
@@ -335,26 +354,28 @@
             </div> 
            </li> 
            <li class="nav-item">
-            <a class="nav-link" href="pages/documentation/documentation.html">
+            <!-- <a class="nav-link" href="pages/documentation/documentation.html">
               <i class="typcn typcn-document-text menu-icon"></i>
               <span class="menu-title">Documentation</span>
-            </a>
+            </a> -->
           </li> 
          </ul> 
          <ul class="sidebar-legend">
-          <li>
+          <!-- <li>
             <p class="sidebar-menu-title">Category</p>
-          </li>
-          <li class="nav-item"><a href="#" class="nav-link">#Sales</a></li>
+          </li> -->
+          <!-- <li class="nav-item"><a href="#" class="nav-link">#Sales</a></li>
           <li class="nav-item"><a href="#" class="nav-link">#Marketing</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">#Growth</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">#Growth</a></li> -->
         </ul>
        </nav> 
 
 
 
-
-     <!-- @yield('content') -->
+   <div>
+     @yield('content')
+   </div>
+  </div>
 
 
 

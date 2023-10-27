@@ -9,7 +9,7 @@
       <th scope="col">#</th>
       <th scope="col">First</th>
       <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Manage</th>
     </tr>
   </thead>
   <tbody>
