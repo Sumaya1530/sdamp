@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/vertical-layout-light/style.css">
     <!-- endinject -->
     <link rel="shortcut icon" href="images/favicon.png" />
+    
   </head>
   <body>
 
@@ -30,8 +31,8 @@
 
 
 
-    <div class="container-scroller">
-      <!-- partial:partials/_navbar.html -->
+     <div class="container-scroller">
+      partial:partials/_navbar.html
       <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
           <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo.svg" alt="logo"/></a>
@@ -179,9 +180,9 @@
           </button>
         </div>
       </nav>
-      <!-- partial -->
-      <div class="container-fluid page-body-wrapper">
-        <!-- partial:partials/_settings-panel.html -->
+       partial
+       <div class="container-fluid page-body-wrapper">
+        partial:partials/_settings-panel.html
         <div class="theme-setting-wrapper">
           <div id="settings-trigger"><i class="typcn typcn-cog-outline"></i></div>
           <div id="theme-settings" class="settings-panel">
@@ -207,8 +208,8 @@
             </div>
           </div>
         </div>
-        <!-- partial -->
-        <!-- partial:partials/_sidebar.html -->
+         < partial 
+         <partial:partials/_sidebar.html -->
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
@@ -306,7 +307,7 @@
               </ul>
             </div>
           </li>
-          <!-- <li class="nav-item">
+         <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
               <i class="typcn typcn-user-add-outline menu-icon"></i>
               <span class="menu-title">User Pages</span>
@@ -318,36 +319,36 @@
                 <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
               </ul>
             </div>
-          </li> -->
-          <!-- <li class="nav-item">
+          </li> 
+           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#error" aria-expanded="false" aria-controls="error">
               <i class="typcn typcn-globe-outline menu-icon"></i>
               <span class="menu-title">Error pages</span>
               <i class="menu-arrow"></i>
-            </a> -->
-            <!-- <div class="collapse" id="error">
+            </a>
+            <div class="collapse" id="error">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
                 <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
               </ul>
-            </div> -->
-          </li>
-          <!-- <li class="nav-item">
+            </div> 
+           </li> 
+           <li class="nav-item">
             <a class="nav-link" href="pages/documentation/documentation.html">
               <i class="typcn typcn-document-text menu-icon"></i>
               <span class="menu-title">Documentation</span>
             </a>
-          </li> -->
-        </ul>
-        <!-- <ul class="sidebar-legend">
+          </li> 
+         </ul> 
+         <ul class="sidebar-legend">
           <li>
             <p class="sidebar-menu-title">Category</p>
           </li>
           <li class="nav-item"><a href="#" class="nav-link">#Sales</a></li>
           <li class="nav-item"><a href="#" class="nav-link">#Marketing</a></li>
           <li class="nav-item"><a href="#" class="nav-link">#Growth</a></li>
-        </ul> -->
-      </nav>
+        </ul>
+       </nav> 
 
 
 
