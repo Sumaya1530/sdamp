@@ -3,35 +3,45 @@
 
 @section('content')
 
-<table class="table table-dark">
-  <thead>
+<div class="card">
+  <div class="card-header">
+    <h2>Appointment Information<h2>
+  </div>
+  <div class="card-body">
+
+<table class="table table-dark"> 
+    <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Manage</th>
+      <th>ID</th>
+      <th>Patient_Name</th>
+      <th>Appointment_Address</th>
+      <th>Doctor_Name</th>
+      <th>Booking_Date</th>
+      <th>Booking_Time</th>
+      <th>Cancel_Appointment</th>
     </tr>
   </thead>
   <tbody>
+
+  @foreach($mbooking as $mbookingdata)
+
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <th> {{$mbookingdata->id}} </th>
+      <td>{{$mbookingdata->Patient_Name}}</td>
+      <td>{{$mbookingdata->Appointment_Address}}</td>
+      <td>{{$mbookingdata->Doctor_Name}}</td>
+      <td>{{$mbookingdata->Booking_Date}}</td>
+      <td>{{$mbookingdata->Booking_Time}}</td>
+      <td>
+        <button class="btn btn-danger">cancel</button>
+      </td>
     </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
+    @endforeach
+
   </tbody>
 </table>
+
+</div>
+</div>
 
 @endsection
